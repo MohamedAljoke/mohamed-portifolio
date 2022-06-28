@@ -1,0 +1,88 @@
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  margin-right: 20px;
+
+  span{
+      margin-right: 10px;
+        font-size: 1rem;
+  }
+}
+.toggle-text {
+  position: relative;
+  top: -4px;
+  right: 5px;
+  color: $dark-grey
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  input{
+      display: none;
+  }
+}
+.slider {
+  background: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked+.slider {
+  background: $dark-purple;
+}
+
+input:checked+.slider::before {
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+  
+}
+
+.fas {
+  font-size: 30px;
+  margin-right: 5px;
+}
+.fab {
+
+  cursor: pointer;
+  color:$dark-purple;
+}
+
+.fab:hover {
+  color: $dark-grey;
+}
+nav {
+  /* mantain the nav bar in the upper part */
+  .nav-items{
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+
+ 
+  }
+}
