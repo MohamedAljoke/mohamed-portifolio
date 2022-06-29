@@ -33,7 +33,7 @@ export const englishData = {
     9) Criação de imagem no Docker para hospedar na #aws`,
     },
     {
-      titulo: 'Crown e-commercet',
+      titulo: 'Crown e-commerce',
       img: images.eloja,
       gitHub: 'https://github.com/Janku13/E_commerce.git',
       link: 'http://janku-crwn-shop.herokuapp.com',
