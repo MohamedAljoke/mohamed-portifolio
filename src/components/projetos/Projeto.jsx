@@ -5,9 +5,16 @@ export default function Projeto({ projeto }) {
   return (
     <CardBody>
       <h2>{projeto.titulo}</h2>
-      <CardText className="text-danger">{projeto.descricao}</CardText>
+      <CardText className="text-danger">{projeto.descricaoCurta}</CardText>
       <div className="product-img-container">
-        <img src={projeto.img} className="project-image" />
+        <a
+          href={projeto.link}
+          rel="noreferrer"
+          target="_blank"
+          title={projeto.titulo}
+        >
+          <img src={projeto.img} className="project-image" />
+        </a>
       </div>
     </CardBody>
   );
