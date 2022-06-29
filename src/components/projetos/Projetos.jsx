@@ -1,33 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { projetos } from '../../data/projects';
-import {
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardText,
-  Button,
-} from 'reactstrap';
+import { Card, Row, Col, Container } from 'reactstrap';
+import { ThemContext } from '../../context/theme.context';
+import Projeto from './Projeto';
 
-export default function Projetos({ isDark }) {
+export default function Projetos() {
+  const { isDark } = useContext(ThemContext);
   const choosenTextColor = {
     color: `${isDark ? 'white' : 'black'}`,
-    paddingTop: '120px',
   };
 
   return (
-    <section style={choosenTextColor}>
-      {projetos.map((projeto) => {
-        return (
-          <Card>
-            <CardBody>
-              <h2>{projeto.titulo}</h2>
-              <CardText className="text-danger">{projeto.descricao}</CardText>
-              <img src={projeto.img}></img>
-            </CardBody>
-          </Card>
-        );
-      })}
+    <section style={choosenTextColor} className="section">
+      <Container>
+        <Row>
+          {projetos.map((projeto) => {
+            return (
+              <Col lg={4}>
+                <Card className="p-2 m-2 mb-5">
+                  <Projeto projeto={projeto} />
+                </Card>
+              </Col>
+            );
+          })}
+        </Row>
+      </Container>
     </section>
   );
 }

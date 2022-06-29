@@ -1,0 +1,12 @@
+.product-img-container{
+  display: grid;
+  place-items: center;
+}
+.project-image{
+
+  object-fit: contain;
+   width: 70%;
+    @media #{$xs-layout,$sm-layout,$xxs-layout,$md-layout} {
+      width: 100%;
+      }
+}

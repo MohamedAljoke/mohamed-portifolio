@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemContext } from '../../context/theme.context';
 
-export default function SwitchMode({ isDark, styleMode, setIsDark }) {
-  const choosenTextColor = { color: `${isDark ? 'white' : 'black'}` };
+export default function SwitchMode({ styleMode }) {
+  const { isDark, setIsDark, choosenTextColor } = useContext(ThemContext);
   return (
     <div className="theme-switch-wrapper">
       <span id="toggle-icon">

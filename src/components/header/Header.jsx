@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Navbar, NavbarToggler, Collapse, Nav, NavbarBrand } from 'reactstrap';
+
+import { ThemContext } from '../../context/theme.context';
+
 import { englishData } from '../../data/english';
 import { portuguesData } from '../../data/portugues';
+
 import MyNavItem from './NavItem';
 import SwitchMode from './SwitchMode';
 import ToggleLang from './ToggleLang';
 
-export default function Header({ isDark, setIsDark }) {
+export default function Header() {
+  const { isDark, setIsDark, choosenTextColor } = useContext(ThemContext);
   const [textObject, setTextObject] = useState(englishData);
   const [choosenLang, setChoosenLang] = useState('english');
   const [toggleNav, setToggleNav] = useState(false);
@@ -28,9 +33,7 @@ export default function Header({ isDark, setIsDark }) {
   const navItems = navItemsArray.map((item) => {
     return <MyNavItem item={item} isDark={isDark} textObject={textObject} />;
   });
-  const choosenTextColor = {
-    color: `${isDark ? 'white' : 'black'}`,
-  };
+
   const choosenTextColor1 = {
     color: `${isDark ? 'white' : 'black'}`,
     backgroundColor: `white`,
@@ -56,18 +59,10 @@ export default function Header({ isDark, setIsDark }) {
       <Collapse navbar isOpen={toggleNav}>
         <Nav className="me-auto" navbar>
           {navItems}
-          <ToggleLang
-            isDark={isDark}
-            textObject={textObject}
-            setChoosenLang={setChoosenLang}
-          />
+          <ToggleLang textObject={textObject} setChoosenLang={setChoosenLang} />
         </Nav>
         <Nav>
-          <SwitchMode
-            isDark={isDark}
-            styleMode={styleMode}
-            setIsDark={setIsDark}
-          />
+          <SwitchMode styleMode={styleMode} />
         </Nav>
       </Collapse>
     </Navbar>
