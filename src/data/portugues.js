@@ -6,6 +6,7 @@ import AwsIcon from 'mdi-react/AwsIcon';
 import ReactIcon from 'mdi-react/ReactIcon';
 import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
+import LanguageJavascriptIcon from 'mdi-react/LanguageJavascriptIcon';
 
 export const portuguesData = {
   name: 'Mohamed Ibrahim Aljoke',
@@ -49,6 +50,16 @@ export const portuguesData = {
         <FirebaseIcon color="#2C384A" />,
         <LoginIcon color="black" />,
       ],
+    },
+    {
+      titulo: 'TV-API',
+      img: images.tv,
+      gitHub: 'https://github.com/Janku13/findMovie',
+      link: 'https://janku13.github.io/findMovie/',
+      descricaoCurta:
+        'This project uses DOM and API from TVmaze. you can enter the show name, and it gets the possible image and a link where you can watch it',
+      descricao: ` `,
+      usedTech: [<LanguageJavascriptIcon color="black" />],
     },
   ],
 };
