@@ -2,11 +2,12 @@
   display: grid;
   place-items: center;
 }
-.project-image{
-
+.project-image{ 
   object-fit: contain;
-   width: 70%;
+   width: 100%;
+   height: 100%;
     @media #{$xs-layout,$sm-layout,$xxs-layout,$md-layout} {
       width: 100%;
+        height: 100%;
       }
 }

@@ -2,18 +2,16 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Navbar, NavbarToggler, Collapse, Nav, NavbarBrand } from 'reactstrap';
 
 import { ThemContext } from '../../context/theme.context';
-
-import { englishData } from '../../data/english';
-import { portuguesData } from '../../data/portugues';
+import { LangContext } from '../../context/lang.context';
 
 import MyNavItem from './NavItem';
 import SwitchMode from './SwitchMode';
 import ToggleLang from './ToggleLang';
 
 export default function Header() {
-  const { isDark, setIsDark, choosenTextColor } = useContext(ThemContext);
-  const [textObject, setTextObject] = useState(englishData);
-  const [choosenLang, setChoosenLang] = useState('english');
+  const { isDark, choosenTextColor } = useContext(ThemContext);
+  const { navItemsArray, textObject, setChoosenLang } = useContext(LangContext);
+
   const [toggleNav, setToggleNav] = useState(false);
   const [styleMode, setStyleMode] = useState('');
 
@@ -24,12 +22,6 @@ export default function Header() {
     setStyleMode(styleMode1);
   }, [isDark, textObject]);
 
-  useEffect(() => {
-    const textObject1 = choosenLang === 'english' ? englishData : portuguesData;
-    setTextObject(textObject1);
-  }, [choosenLang]);
-
-  const navItemsArray = Object.keys(textObject.header);
   const navItems = navItemsArray.map((item) => {
     return <MyNavItem item={item} isDark={isDark} textObject={textObject} />;
   });
