@@ -19,8 +19,18 @@ export default function Projetos() {
           {textObject.projetos.map((projeto) => {
             return (
               <Col lg={4}>
-                <Card className="p-2 m-2 mb-5">
+                <Card className="p-2 m-2 mb-5 project-card-container">
                   <Projeto projeto={projeto} />
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                    }}
+                  >
+                    {' '}
+                    {projeto.usedTech}
+                  </div>
                 </Card>
               </Col>
             );

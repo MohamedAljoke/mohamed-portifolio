@@ -2,6 +2,7 @@ import React from 'react';
 import { CardBody, CardText } from 'reactstrap';
 
 export default function Projeto({ projeto }) {
+  console.log(projeto.usedTech);
   return (
     <CardBody>
       <h2>{projeto.titulo}</h2>
@@ -16,6 +17,7 @@ export default function Projeto({ projeto }) {
           title={projeto.titulo}
         >
           <img src={projeto.img} className="project-image" />
+          {projeto.descricao}
         </a>
       </div>
     </CardBody>
