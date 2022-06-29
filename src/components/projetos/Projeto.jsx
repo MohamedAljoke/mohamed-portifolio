@@ -5,7 +5,9 @@ export default function Projeto({ projeto }) {
   return (
     <CardBody>
       <h2>{projeto.titulo}</h2>
-      <CardText className="text-danger">{projeto.descricaoCurta}</CardText>
+      <CardText className="project-descricao">
+        {projeto.descricaoCurta}
+      </CardText>
       <div className="product-img-container">
         <a
           href={projeto.link}

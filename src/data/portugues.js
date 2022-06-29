@@ -19,7 +19,8 @@ export const portuguesData = {
       img: images.nasa,
       gitHub: 'https://github.com/Janku13/nasa-project',
       link: 'http://54.232.228.100:8000',
-      descricaoCurta: '',
+      descricaoCurta:
+        'O projeto consume dados de API externa e planilha excel, realiza CRUD das informações com rotas para cada função, controllers e models, dockorizado e hospedado na AWS',
       descricao: `
         Bem o massa do projeto é a proposta dele:
     1) Realizar análise de dados coletados pelo satélite Kepler da Nasa de diversos planetas e suas propriedades.
@@ -38,7 +39,7 @@ export const portuguesData = {
       gitHub: 'https://github.com/Janku13/E_commerce.git',
       link: 'http://janku-crwn-shop.herokuapp.com',
       descricaoCurta:
-        'E-commerce webSite with redux, fireBase, scss, and Stripe payments. hosted on heroku and netlify.',
+        'E-commerce com webSite com redux, fireBase, scss, e Stripe payments. hospedado no heroku e netlify.',
       descricao: `
        
       `,
