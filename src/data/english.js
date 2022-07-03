@@ -6,6 +6,7 @@ import AwsIcon from 'mdi-react/AwsIcon';
 import ReactIcon from 'mdi-react/ReactIcon';
 import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
+import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
 import LanguageJavascriptIcon from 'mdi-react/LanguageJavascriptIcon';
 export const englishData = {
   name: 'Mohamed Ibrahim Aljoke',
@@ -31,6 +32,7 @@ export const englishData = {
       descricao: '',
       usedTech: [
         <NodejsIcon color="green" />,
+        <ReactIcon color="#61DBFB" />,
         <DatabaseIcon color="black" />,
         <DockerIcon color="black" />,
         <AwsIcon color="black" />,
@@ -48,6 +50,19 @@ export const englishData = {
         <ReactIcon color="#61DBFB" />,
         <FirebaseIcon color="#2C384A" />,
         <LoginIcon color="black" />,
+      ],
+    },
+    {
+      titulo: 'Node Rest Api',
+      img: images.restApi,
+      gitHub: 'https://github.com/Janku13/REST-NODE',
+      descricaoCurta:
+        'Rest Api that has use CRUD and session JWT token and cookies, validtion with zod and test with Jest also made a UI in next for the auth and swagger docs',
+      descricao: ` `,
+      usedTech: [
+        <NodejsIcon color="green" />,
+        <LanguageTypescriptIcon color="#007acc" />,
+        <DatabaseIcon color="black" />,
       ],
     },
     {

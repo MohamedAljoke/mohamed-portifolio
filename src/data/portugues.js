@@ -6,6 +6,7 @@ import AwsIcon from 'mdi-react/AwsIcon';
 import ReactIcon from 'mdi-react/ReactIcon';
 import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
+import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
 import LanguageJavascriptIcon from 'mdi-react/LanguageJavascriptIcon';
 
 export const portuguesData = {
@@ -32,6 +33,7 @@ export const portuguesData = {
       descricao: '',
       usedTech: [
         <NodejsIcon color="green" />,
+        <ReactIcon color="#61DBFB" />,
         <DatabaseIcon color="black" />,
         <DockerIcon color="black" />,
         <AwsIcon color="black" />,
@@ -52,12 +54,25 @@ export const portuguesData = {
       ],
     },
     {
+      titulo: 'Node Rest Api',
+      img: images.restApi,
+      gitHub: 'https://github.com/Janku13/REST-NODE',
+      descricaoCurta:
+        'Api rest com crud para criar user e jwt token em seguida criar session usando zod para validação e express, node, mongo e TS. Também documentação com swagger docs e coleção no postman',
+      descricao: ` `,
+      usedTech: [
+        <NodejsIcon color="green" />,
+        <LanguageTypescriptIcon color="#007acc" />,
+        <DatabaseIcon color="black" />,
+      ],
+    },
+    {
       titulo: 'TV-API',
       img: images.tv,
       gitHub: 'https://github.com/Janku13/findMovie',
       link: 'https://janku13.github.io/findMovie/',
       descricaoCurta:
-        'This project uses DOM and API from TVmaze. you can enter the show name, and it gets the possible image and a link where you can watch it',
+        'Manipular DOM e consumir API da TVmaze, para encontrar onde determinado show é hospedado',
       descricao: ` `,
       usedTech: [<LanguageJavascriptIcon color="black" />],
     },
