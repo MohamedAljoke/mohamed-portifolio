@@ -6,6 +6,7 @@ import AwsIcon from 'mdi-react/AwsIcon';
 import ReactIcon from 'mdi-react/ReactIcon';
 import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
+import { TbBrandNextjs, TbBrandUnsplash } from 'react-icons/tb';
 import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
 import LanguageJavascriptIcon from 'mdi-react/LanguageJavascriptIcon';
 export const englishData = {
@@ -50,6 +51,20 @@ export const englishData = {
         <ReactIcon color="#61DBFB" />,
         <FirebaseIcon color="#2C384A" />,
         <LoginIcon color="black" />,
+      ],
+    },
+    {
+      titulo: 'Coffee',
+      img: images.coffee,
+      gitHub: 'https://github.com/Janku13/next-coffee',
+      link: 'https://next-coffee-bay.vercel.app/',
+      descricaoCurta:
+        'A project i did to learn Next.js it fetches data from an external api and imgs from UNSPLASH api. TODO -> add up votes and find more stores buttons',
+      descricao: '',
+      usedTech: [
+        <ReactIcon color="#61DBFB" />,
+        <TbBrandNextjs size={28} color="#2C384A" />,
+        <TbBrandUnsplash size={28} color="#2C384A" />,
       ],
     },
     {
