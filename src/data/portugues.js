@@ -8,6 +8,7 @@ import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
 import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
 import LanguageJavascriptIcon from 'mdi-react/LanguageJavascriptIcon';
+import { TbBrandNextjs, TbBrandUnsplash } from 'react-icons/tb';
 
 export const portuguesData = {
   name: 'Mohamed Ibrahim Aljoke',
@@ -54,6 +55,19 @@ export const portuguesData = {
       ],
     },
     {
+      titulo: 'Coffee',
+      img: images.coffee,
+      gitHub: 'https://github.com/Janku13/next-coffee',
+      link: 'https://next-coffee-bay.vercel.app/',
+      descricaoCurta: 'Criação de componentes e cards com NEXT.JS',
+      descricao: '',
+      usedTech: [
+        <TbBrandNextjs size={28} color="#2C384A" />,
+        <ReactIcon color="#61DBFB" />,
+        <TbBrandUnsplash size={28} color="#2C384A" />,
+      ],
+    },
+    {
       titulo: 'Node Rest Api',
       img: images.restApi,
       gitHub: 'https://github.com/Janku13/REST-NODE',
@@ -64,6 +78,19 @@ export const portuguesData = {
         <NodejsIcon color="green" />,
         <LanguageTypescriptIcon color="#007acc" />,
         <DatabaseIcon color="black" />,
+      ],
+    },
+    {
+      titulo: 'Adicionar Video',
+      img: images.videos,
+      gitHub: 'https://github.com/Janku13/stream-video-next.git',
+      descricaoCurta:
+        'fs com next.js e Ts, adicionar videos, pagina para ver video onde a informação é enviada por chunks. TODO -> clone YT',
+      descricao: '',
+      usedTech: [
+        <TbBrandNextjs size={28} color="#2C384A" />,
+        <LanguageTypescriptIcon color="#007acc" />,
+        <ReactIcon color="#61DBFB" />,
       ],
     },
     {

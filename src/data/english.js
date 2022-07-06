@@ -62,8 +62,8 @@ export const englishData = {
         'A project i did to learn Next.js it fetches data from an external api and imgs from UNSPLASH api. TODO -> add up votes and find more stores buttons',
       descricao: '',
       usedTech: [
-        <ReactIcon color="#61DBFB" />,
         <TbBrandNextjs size={28} color="#2C384A" />,
+        <ReactIcon color="#61DBFB" />,
         <TbBrandUnsplash size={28} color="#2C384A" />,
       ],
     },
@@ -78,6 +78,19 @@ export const englishData = {
         <NodejsIcon color="green" />,
         <LanguageTypescriptIcon color="#007acc" />,
         <DatabaseIcon color="black" />,
+      ],
+    },
+    {
+      titulo: 'Adicionar Video',
+      img: images.videos,
+      gitHub: 'https://github.com/Janku13/stream-video-next.git',
+      descricaoCurta:
+        'fs with next.js and Ts, you can add videos and then stream the video with chunks, page to add video and to watch.TODO -> clone YT',
+      descricao: '',
+      usedTech: [
+        <TbBrandNextjs size={28} color="#2C384A" />,
+        <LanguageTypescriptIcon color="#007acc" />,
+        <ReactIcon color="#61DBFB" />,
       ],
     },
     {
