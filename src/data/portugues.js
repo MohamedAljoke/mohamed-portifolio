@@ -103,5 +103,19 @@ export const portuguesData = {
       descricao: ` `,
       usedTech: [<LanguageJavascriptIcon color="black" />],
     },
+    {
+      titulo: 'Chat App',
+      img: images.socket,
+      gitHub: 'https://github.com/Janku13/Next-Node-Socketio',
+
+      descricaoCurta:
+        'Utilizar socket.io para criação de chat, criar sala, enviar mensagem etc',
+      descricao: ` `,
+      usedTech: [
+        <TbBrandNextjs size={28} color="#2C384A" />,
+        <NodejsIcon color="green" />,
+        <LanguageTypescriptIcon color="#007acc" />,
+      ],
+    },
   ],
 };
