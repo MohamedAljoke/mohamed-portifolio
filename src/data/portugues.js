@@ -7,6 +7,7 @@ import ReactIcon from 'mdi-react/ReactIcon';
 import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
 import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
+import { SiSocketdotio, SiAirplayvideo, SiDocker } from 'react-icons/si';
 import LanguageJavascriptIcon from 'mdi-react/LanguageJavascriptIcon';
 import { TbBrandNextjs, TbBrandUnsplash } from 'react-icons/tb';
 
@@ -135,6 +136,36 @@ export const portuguesData = {
         <NodejsIcon color="green" />,
         <LanguageTypescriptIcon color="#007acc" />,
       ],
+    },
+  ],
+  techs: [
+    {
+      text: 'Next.js',
+      icon: [<TbBrandNextjs size={28} color="#2C384A" />],
+    },
+    {
+      text: 'Typescript',
+      icon: [<LanguageTypescriptIcon color="#007acc" />],
+    },
+    {
+      text: 'Socket.io',
+      icon: [<SiSocketdotio color="#007acc" />],
+    },
+    {
+      text: 'Video streaming (node with fs)',
+      icon: [<SiAirplayvideo color="#007acc" />],
+    },
+    {
+      text: 'React Native',
+      icon: [<ReactIcon color="#61DBFB" />],
+    },
+    {
+      text: 'Docker',
+      icon: [<SiDocker color="black" />],
+    },
+    {
+      text: 'Firebase',
+      icon: [<FirebaseIcon color="#2C384A" />],
     },
   ],
 };

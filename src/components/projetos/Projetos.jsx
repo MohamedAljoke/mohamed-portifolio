@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import NodejsIcon from 'mdi-react/NodejsIcon';
 import GithubIcon from 'mdi-react/GithubIcon';
 import WebIcon from 'mdi-react/WebIcon';
 import { Card, Row, Col, Container, CardText } from 'reactstrap';
@@ -19,22 +20,28 @@ export default function Projetos() {
       <Container>
         <Row>
           <Col>
-            {textObject.proficional.map((item) => {
+            {textObject.proficional.map((item, idx) => {
               return (
-                <Card className="p-4 m-2 mb-5 proficional-card-container">
+                <Card
+                  key={idx}
+                  className="p-4 m-2 mb-5 proficional-card-container"
+                >
                   <h2>{item.company}</h2>
                   <CardText className="project-descricao">
                     {item.atividade}
                     <br />
                     <p className="pt-2">Extra Things that I learned:</p>
                     <ul>
-                      <li>Next.js</li>
-                      <li>Typescript</li>
-                      <li>Socket.io</li>
-                      <li>Video streaming (node with fs)</li>
-                      <li>ReactNative</li>
-                      <li>Docker</li>
-                      <li>Firebase</li>
+                      {textObject.techs.map((tech, idx) => {
+                        return (
+                          <li key={idx}>
+                            <span>{tech.text}</span>
+                            <span style={{ marginLeft: '10px' }}>
+                              {tech.icon[0]}
+                            </span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </CardText>
                 </Card>
