@@ -117,5 +117,17 @@ export const portuguesData = {
         <LanguageTypescriptIcon color="#007acc" />,
       ],
     },
+    {
+      titulo: 'Ping Pong',
+      img: images.pong,
+      gitHub: 'https://github.com/Janku13/ping-pong-socket-node',
+
+      descricaoCurta: 'Utilizar socket.io para criar jogo do ping pong.',
+      descricao: ` `,
+      usedTech: [
+        <NodejsIcon color="green" />,
+        <LanguageTypescriptIcon color="#007acc" />,
+      ],
+    },
   ],
 };
