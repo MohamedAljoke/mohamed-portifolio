@@ -23,6 +23,13 @@ export const portuguesData = {
     light: 'Modo Claro',
   },
   language: 'Idioma',
+  proficional: [
+    {
+      company: 'Advanced Digital',
+      atividade:
+        'Realizar manutenção de e-commerce websites e fix bugs, criar e-commerce do zero com React (hooks & redux), integrar front com api api e adicionar routes/controllers (node.js). MERN stack: confort with react && node',
+    },
+  ],
   projetos: [
     {
       titulo: 'Nasa Project',

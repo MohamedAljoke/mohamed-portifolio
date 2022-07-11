@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import GithubIcon from 'mdi-react/GithubIcon';
 import WebIcon from 'mdi-react/WebIcon';
-import { Card, Row, Col, Container } from 'reactstrap';
+import { Card, Row, Col, Container, CardText } from 'reactstrap';
 import { LangContext } from '../../context/lang.context';
 import { ThemContext } from '../../context/theme.context';
 
@@ -17,6 +17,31 @@ export default function Projetos() {
   return (
     <section style={choosenTextColor} className="section">
       <Container>
+        <Row>
+          <Col>
+            {textObject.proficional.map((item) => {
+              return (
+                <Card className="p-4 m-2 mb-5 proficional-card-container">
+                  <h2>{item.company}</h2>
+                  <CardText className="project-descricao">
+                    {item.atividade}
+                    <br />
+                    <p className="pt-2">Extra Things that I learned:</p>
+                    <ul>
+                      <li>Next.js</li>
+                      <li>Typescript</li>
+                      <li>Socket.io</li>
+                      <li>Video streaming (node with fs)</li>
+                      <li>ReactNative</li>
+                      <li>Docker</li>
+                      <li>Firebase</li>
+                    </ul>
+                  </CardText>
+                </Card>
+              );
+            })}
+          </Col>
+        </Row>
         <Row>
           {textObject.projetos.map((projeto) => {
             return (
