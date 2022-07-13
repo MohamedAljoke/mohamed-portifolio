@@ -7,7 +7,12 @@ import ReactIcon from 'mdi-react/ReactIcon';
 import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
 import { TbBrandNextjs, TbBrandUnsplash } from 'react-icons/tb';
-import { SiSocketdotio, SiAirplayvideo, SiDocker } from 'react-icons/si';
+import {
+  SiSocketdotio,
+  SiAirplayvideo,
+  SiDocker,
+  SiAirtable,
+} from 'react-icons/si';
 import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
 import LanguageJavascriptIcon from 'mdi-react/LanguageJavascriptIcon';
 export const englishData = {
@@ -67,12 +72,13 @@ export const englishData = {
       gitHub: 'https://github.com/Janku13/next-coffee',
       link: 'https://next-coffee-bay.vercel.app/',
       descricaoCurta:
-        'A project i did to learn Next.js it fetches data from an external api and imgs from UNSPLASH api. TODO -> add up votes and find more stores buttons',
+        'A project i did to learn Next.js and AIRTABLE with SSR && SWR for up voting, it fetches data from an external api and imgs from UNSPLASH api. add up votes and find more stores near me buttons',
       descricao: '',
       usedTech: [
         <TbBrandNextjs size={28} color="#2C384A" />,
         <ReactIcon color="#61DBFB" />,
         <TbBrandUnsplash size={28} color="#2C384A" />,
+        <SiAirtable size={28} color="black" />,
       ],
     },
     {

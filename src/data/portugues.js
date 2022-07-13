@@ -7,7 +7,12 @@ import ReactIcon from 'mdi-react/ReactIcon';
 import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
 import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
-import { SiSocketdotio, SiAirplayvideo, SiDocker } from 'react-icons/si';
+import {
+  SiSocketdotio,
+  SiAirplayvideo,
+  SiDocker,
+  SiAirtable,
+} from 'react-icons/si';
 import LanguageJavascriptIcon from 'mdi-react/LanguageJavascriptIcon';
 import { TbBrandNextjs, TbBrandUnsplash } from 'react-icons/tb';
 
@@ -67,12 +72,14 @@ export const portuguesData = {
       img: images.coffee,
       gitHub: 'https://github.com/Janku13/next-coffee',
       link: 'https://next-coffee-bay.vercel.app/',
-      descricaoCurta: 'Criação de componentes e cards com NEXT.JS',
+      descricaoCurta:
+        'Criação de componentes e cards com NEXT.JS encontrar lojas perto de vc com server side render e AIRTABLE com SWR para up vote e SSR',
       descricao: '',
       usedTech: [
         <TbBrandNextjs size={28} color="#2C384A" />,
         <ReactIcon color="#61DBFB" />,
         <TbBrandUnsplash size={28} color="#2C384A" />,
+        <SiAirtable size={28} color="black" />,
       ],
     },
     {
