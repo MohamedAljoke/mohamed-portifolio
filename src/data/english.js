@@ -9,9 +9,11 @@ import LoginIcon from 'mdi-react/LoginIcon';
 import { TbBrandNextjs, TbBrandUnsplash } from 'react-icons/tb';
 import {
   SiSocketdotio,
+  SiDart,
   SiAirplayvideo,
   SiDocker,
   SiAirtable,
+  SiFlutter,
 } from 'react-icons/si';
 import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
 import LanguageJavascriptIcon from 'mdi-react/LanguageJavascriptIcon';
@@ -143,6 +145,16 @@ export const englishData = {
         <LanguageTypescriptIcon color="#007acc" />,
       ],
     },
+    {
+      titulo: 'Flutter Quizz',
+      img: images.quiz,
+      gitHub: 'https://github.com/Janku13/flutter_quizz',
+
+      descricaoCurta:
+        'Project to understand dart -> OO and flutter UI and state manegment',
+      descricao: ` `,
+      usedTech: [<SiFlutter color="#007acc" />, <SiDart color="black" />],
+    },
   ],
   techs: [
     {
@@ -152,6 +164,10 @@ export const englishData = {
     {
       text: 'Typescript',
       icon: [<LanguageTypescriptIcon color="#007acc" />],
+    },
+    {
+      text: 'Flutter',
+      icon: [<SiFlutter color="#007acc" />],
     },
     {
       text: 'Socket.io',

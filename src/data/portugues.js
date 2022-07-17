@@ -9,6 +9,8 @@ import LoginIcon from 'mdi-react/LoginIcon';
 import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
 import {
   SiSocketdotio,
+  SiFlutter,
+  SiDart,
   SiAirplayvideo,
   SiDocker,
   SiAirtable,
@@ -155,6 +157,10 @@ export const portuguesData = {
       icon: [<LanguageTypescriptIcon color="#007acc" />],
     },
     {
+      text: 'Flutter',
+      icon: [<SiFlutter color="#007acc" />],
+    },
+    {
       text: 'Socket.io',
       icon: [<SiSocketdotio color="#007acc" />],
     },
@@ -173,6 +179,16 @@ export const portuguesData = {
     {
       text: 'Firebase',
       icon: [<FirebaseIcon color="#2C384A" />],
+    },
+    {
+      titulo: 'Flutter Quizz',
+      img: images.quiz,
+      gitHub: 'https://github.com/Janku13/flutter_quizz',
+
+      descricaoCurta:
+        'Project para entender dart -> OO e flutter criação de UI',
+      descricao: ` `,
+      usedTech: [<SiFlutter color="#007acc" />, <SiDart color="black" />],
     },
   ],
 };
