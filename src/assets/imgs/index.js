@@ -8,8 +8,10 @@ import socket from './socket.png';
 import pong from './pong.png';
 import quiz from './flutterQuiz.png';
 import todoFlutter from './flutterTodo.png';
+import mealsNative from './mealNative.png';
 
 const images = {
+  mealsNative,
   todoFlutter,
   quiz,
   nasa,

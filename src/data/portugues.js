@@ -166,6 +166,16 @@ export const portuguesData = {
       descricao: ` `,
       usedTech: [<SiFlutter color="#007acc" />, <SiDart color="black" />],
     },
+    {
+      titulo: 'Meals React-Native',
+      img: images.mealsNative,
+      gitHub: 'https://github.com/Janku13/Meals',
+
+      descricaoCurta:
+        'Criar component styled e reutilizável, mange state com useContext hook, e google maps -> utilizando react-native ',
+      descricao: ` `,
+      usedTech: [<ReactIcon color="#61DBFB" />],
+    },
   ],
   techs: [
     {
