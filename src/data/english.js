@@ -22,8 +22,8 @@ export const englishData = {
   header: {
     // home: 'HOME',
     // about: 'ABOUT',
-    projects: 'PROJECTS',
-    contact: 'CONTACT',
+    // projects: 'PROJECTS',
+    // contact: 'CONTACT',
   },
   styleMode: {
     dark: 'Dark Mode',
@@ -144,6 +144,16 @@ export const englishData = {
         <NodejsIcon color="green" />,
         <LanguageTypescriptIcon color="#007acc" />,
       ],
+    },
+    {
+      titulo: 'Flutter Todo List',
+      img: images.todoFlutter,
+      gitHub: 'https://github.com/Janku13/todo_list_flutter',
+
+      descricaoCurta:
+        'Add item to list check it as completed and delete, flutter + provider for state managment',
+      descricao: ` `,
+      usedTech: [<SiFlutter color="#007acc" />, <SiDart color="black" />],
     },
     {
       titulo: 'Flutter Quizz',

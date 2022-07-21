@@ -23,8 +23,8 @@ export const portuguesData = {
   header: {
     // home: 'INÍCIO',
     // about: 'SOBRE',
-    projects: 'PROJETOS',
-    contact: 'CONTATO',
+    // projects: 'PROJETOS',
+    // contact: 'CONTATO',
   },
   styleMode: {
     dark: 'Modo Escuro',
@@ -146,6 +146,26 @@ export const portuguesData = {
         <LanguageTypescriptIcon color="#007acc" />,
       ],
     },
+    {
+      titulo: 'Flutter Todo List',
+      img: images.todoFlutter,
+      gitHub: 'https://github.com/Janku13/todo_list_flutter',
+
+      descricaoCurta:
+        'Adicionar item para lista, deletar ou marcar como finalizada, flutter com provider.',
+      descricao: ` `,
+      usedTech: [<SiFlutter color="#007acc" />, <SiDart color="black" />],
+    },
+    {
+      titulo: 'Flutter Quizz',
+      img: images.quiz,
+      gitHub: 'https://github.com/Janku13/flutter_quizz',
+
+      descricaoCurta:
+        'Project para entender dart -> OO e flutter criação de UI',
+      descricao: ` `,
+      usedTech: [<SiFlutter color="#007acc" />, <SiDart color="black" />],
+    },
   ],
   techs: [
     {
@@ -179,16 +199,6 @@ export const portuguesData = {
     {
       text: 'Firebase',
       icon: [<FirebaseIcon color="#2C384A" />],
-    },
-    {
-      titulo: 'Flutter Quizz',
-      img: images.quiz,
-      gitHub: 'https://github.com/Janku13/flutter_quizz',
-
-      descricaoCurta:
-        'Project para entender dart -> OO e flutter criação de UI',
-      descricao: ` `,
-      usedTech: [<SiFlutter color="#007acc" />, <SiDart color="black" />],
     },
   ],
 };

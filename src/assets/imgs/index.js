@@ -7,6 +7,18 @@ import videos from './videos.png';
 import socket from './socket.png';
 import pong from './pong.png';
 import quiz from './flutterQuiz.png';
+import todoFlutter from './flutterTodo.png';
 
-const images = { quiz, nasa, eloja, tv, restApi, coffee, videos, socket, pong };
+const images = {
+  todoFlutter,
+  quiz,
+  nasa,
+  eloja,
+  tv,
+  restApi,
+  coffee,
+  videos,
+  socket,
+  pong,
+};
 export default images;
