@@ -9,8 +9,10 @@ import pong from './pong.png';
 import quiz from './flutterQuiz.png';
 import todoFlutter from './flutterTodo.png';
 import mealsNative from './mealNative.png';
+import ytServer from './nodeyt.png';
 
 const images = {
+  ytServer,
   mealsNative,
   todoFlutter,
   quiz,

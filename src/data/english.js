@@ -9,6 +9,7 @@ import LoginIcon from 'mdi-react/LoginIcon';
 import { TbBrandNextjs, TbBrandUnsplash } from 'react-icons/tb';
 import {
   SiSocketdotio,
+  SiPostman,
   SiDart,
   SiAirplayvideo,
   SiDocker,
@@ -93,6 +94,21 @@ export const englishData = {
       usedTech: [
         <NodejsIcon color="green" />,
         <LanguageTypescriptIcon color="#007acc" />,
+        <SiPostman color="black" />,
+        <DatabaseIcon color="black" />,
+      ],
+    },
+    {
+      titulo: 'Youtube Server Clone',
+      img: images.ytServer,
+      gitHub: 'https://github.com/Janku13/node-youtube-ts',
+      descricaoCurta:
+        'Server with Node.js (express) auth, users and videos schema, validation with zod, cookies and jwt token. streaming and saving videos with chunks. db used is mongoose (NoSql), tested with postman',
+      descricao: ` `,
+      usedTech: [
+        <NodejsIcon color="green" />,
+        <LanguageTypescriptIcon color="#007acc" />,
+        <SiPostman color="black" />,
         <DatabaseIcon color="black" />,
       ],
     },

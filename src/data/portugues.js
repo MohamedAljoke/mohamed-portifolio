@@ -8,6 +8,7 @@ import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
 import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
 import {
+  SiPostman,
   SiSocketdotio,
   SiFlutter,
   SiDart,
@@ -94,6 +95,21 @@ export const portuguesData = {
       usedTech: [
         <NodejsIcon color="green" />,
         <LanguageTypescriptIcon color="#007acc" />,
+        <SiPostman color="black" />,
+        <DatabaseIcon color="black" />,
+      ],
+    },
+    {
+      titulo: 'Youtube Server Clone',
+      img: images.ytServer,
+      gitHub: 'https://github.com/Janku13/node-youtube-ts',
+      descricaoCurta:
+        'Server criado com Node.js (express) realiza auth e envia cookie, jwt token, com modules NoSql (mongoose) e validação com zod, também rotas para salvar e fazer streaming de videos by chunks de 1mb, rotas testadas no postman.',
+      descricao: ` `,
+      usedTech: [
+        <NodejsIcon color="green" />,
+        <LanguageTypescriptIcon color="#007acc" />,
+        <SiPostman color="black" />,
         <DatabaseIcon color="black" />,
       ],
     },
