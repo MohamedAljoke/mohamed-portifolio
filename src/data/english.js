@@ -8,6 +8,7 @@ import FirebaseIcon from 'mdi-react/FirebaseIcon';
 import LoginIcon from 'mdi-react/LoginIcon';
 import { TbBrandNextjs, TbBrandUnsplash } from 'react-icons/tb';
 import {
+  SiMongodb,
   SiSocketdotio,
   SiPostman,
   SiDart,
@@ -51,7 +52,7 @@ export const englishData = {
         <NodejsIcon color="green" />,
         <ReactIcon color="#61DBFB" />,
         <DatabaseIcon color="black" />,
-        <DockerIcon color="black" />,
+        <DockerIcon color="#2497ED" />,
         <AwsIcon color="black" />,
       ],
     },
@@ -65,8 +66,7 @@ export const englishData = {
       descricao: '',
       usedTech: [
         <ReactIcon color="#61DBFB" />,
-        <FirebaseIcon color="#2C384A" />,
-        <LoginIcon color="black" />,
+        <FirebaseIcon color="#FFA000" />,
       ],
     },
     {
@@ -94,8 +94,8 @@ export const englishData = {
       usedTech: [
         <NodejsIcon color="green" />,
         <LanguageTypescriptIcon color="#007acc" />,
-        <SiPostman color="black" />,
-        <DatabaseIcon color="black" />,
+        <SiPostman color="#EF5B25" />,
+        <SiMongodb color="#4DB33D" />,
       ],
     },
     {
@@ -108,8 +108,8 @@ export const englishData = {
       usedTech: [
         <NodejsIcon color="green" />,
         <LanguageTypescriptIcon color="#007acc" />,
-        <SiPostman color="black" />,
-        <DatabaseIcon color="black" />,
+        <SiPostman color="#EF5B25" />,
+        <SiMongodb color="#4DB33D" />,
       ],
     },
     {
@@ -194,6 +194,14 @@ export const englishData = {
   ],
   techs: [
     {
+      text: 'React.js',
+      icon: [<ReactIcon size={28} color="#61DBFB" />],
+    },
+    {
+      text: 'Node.js',
+      icon: [<NodejsIcon size={28} color="green" />],
+    },
+    {
       text: 'Next.js',
       icon: [<TbBrandNextjs size={28} color="#2C384A" />],
     },
@@ -204,6 +212,10 @@ export const englishData = {
     {
       text: 'Flutter',
       icon: [<SiFlutter color="#007acc" />],
+    },
+    {
+      text: 'Postman',
+      icon: [<SiPostman color="#EF5B25" />],
     },
     {
       text: 'Socket.io',
@@ -219,11 +231,11 @@ export const englishData = {
     },
     {
       text: 'Docker',
-      icon: [<SiDocker color="black" />],
+      icon: [<SiDocker color="#2497ED" />],
     },
     {
       text: 'Firebase',
-      icon: [<FirebaseIcon color="#2C384A" />],
+      icon: [<FirebaseIcon color="#FFA000" />],
     },
   ],
 };
