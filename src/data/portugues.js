@@ -86,6 +86,19 @@ export const portuguesData = {
       ],
     },
     {
+      titulo: 'Nextflix',
+      img: images.nextflix,
+      gitHub: 'https://github.com/Janku13/nextflix',
+      link: 'https://nextflix-three.vercel.app/',
+      descricaoCurta:
+        'Clone de netflix com Next.js tudo está SSR, e login com magic links, os dados dos videos são consumidos pela API do yt. O projeto está em andamento. TODO: pagina video detalhes, favoritos e watch again',
+      descricao: '',
+      usedTech: [
+        <TbBrandNextjs size={28} color="#2C384A" />,
+        <ReactIcon color="#61DBFB" />,
+      ],
+    },
+    {
       titulo: 'Node Rest Api',
       img: images.restApi,
       gitHub: 'https://github.com/Janku13/REST-NODE',

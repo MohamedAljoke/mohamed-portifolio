@@ -10,8 +10,10 @@ import quiz from './flutterQuiz.png';
 import todoFlutter from './flutterTodo.png';
 import mealsNative from './mealNative.png';
 import ytServer from './nodeyt.png';
+import nextflix from './nextflix.png';
 
 const images = {
+  nextflix,
   ytServer,
   mealsNative,
   todoFlutter,
