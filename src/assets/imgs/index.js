@@ -11,8 +11,10 @@ import todoFlutter from './flutterTodo.png';
 import mealsNative from './mealNative.png';
 import ytServer from './nodeyt.png';
 import nextflix from './nextflix.png';
+import flutterEcommerce from './fecommerce.png';
 
 const images = {
+  flutterEcommerce,
   nextflix,
   ytServer,
   mealsNative,

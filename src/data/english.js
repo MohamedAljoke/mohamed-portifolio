@@ -5,8 +5,8 @@ import DockerIcon from 'mdi-react/DockerIcon';
 import AwsIcon from 'mdi-react/AwsIcon';
 import ReactIcon from 'mdi-react/ReactIcon';
 import FirebaseIcon from 'mdi-react/FirebaseIcon';
-import LoginIcon from 'mdi-react/LoginIcon';
 import { TbBrandNextjs, TbBrandUnsplash } from 'react-icons/tb';
+
 import {
   SiMongodb,
   SiSocketdotio,
@@ -32,11 +32,17 @@ export const englishData = {
     light: 'Light Mode',
   },
   language: 'Language',
+  education: [
+    {
+      faculdade: 'Mechanical Engineering',
+      status: 'Graduated in 22/06/2022',
+    },
+  ],
   proficional: [
     {
       company: 'Advanced Digital',
       atividade:
-        'Maintain e-commerce websites and fix bugs, create a full e-commerce front with React (hooks & redux), integrate with api and add api routes/controllers (node.js). MERN stack: confort with react && node',
+        'Maintain e-commerce websites and fix bugs, create a full e-commerce front with React (hooks & redux), integrate with api and add api routes/controllers (node.js). MERN stack: confort with react && node, create an admin application with Flutter',
     },
   ],
   projetos: [
@@ -56,19 +62,7 @@ export const englishData = {
         <AwsIcon color="black" />,
       ],
     },
-    {
-      titulo: 'Crown e-commerce',
-      img: images.eloja,
-      gitHub: 'https://github.com/Janku13/E_commerce.git',
-      link: 'http://janku-crwn-shop.herokuapp.com',
-      descricaoCurta:
-        'E-commerce webSite with redux, fireBase, scss, and Stripe payments. hosted on heroku and netlify.',
-      descricao: '',
-      usedTech: [
-        <ReactIcon color="#61DBFB" />,
-        <FirebaseIcon color="#FFA000" />,
-      ],
-    },
+
     {
       titulo: 'Coffee',
       img: images.coffee,
@@ -95,6 +89,29 @@ export const englishData = {
       usedTech: [
         <TbBrandNextjs size={28} color="#2C384A" />,
         <ReactIcon color="#61DBFB" />,
+      ],
+    },
+    {
+      titulo: 'Flutter E-commerce',
+      img: images.flutterEcommerce,
+      gitHub: 'https://github.com/Janku13/flutter_ecommerce',
+
+      descricaoCurta:
+        'Flutter e-commerce with login, cart,product detalhes, infint loading and GetX for state-managment consuming external API',
+      descricao: ` `,
+      usedTech: [<SiFlutter color="#007acc" />, <SiDart color="black" />],
+    },
+    {
+      titulo: 'Crown e-commerce',
+      img: images.eloja,
+      gitHub: 'https://github.com/Janku13/E_commerce.git',
+      link: 'http://janku-crwn-shop.herokuapp.com',
+      descricaoCurta:
+        'E-commerce webSite with redux, fireBase, scss, and Stripe payments. hosted on heroku and netlify.',
+      descricao: '',
+      usedTech: [
+        <ReactIcon color="#61DBFB" />,
+        <FirebaseIcon color="#FFA000" />,
       ],
     },
     {
@@ -215,6 +232,10 @@ export const englishData = {
       icon: [<NodejsIcon size={28} color="green" />],
     },
     {
+      text: 'Flutter',
+      icon: [<SiFlutter color="#007acc" />],
+    },
+    {
       text: 'Next.js',
       icon: [<TbBrandNextjs size={28} color="#2C384A" />],
     },
@@ -222,10 +243,7 @@ export const englishData = {
       text: 'Typescript',
       icon: [<LanguageTypescriptIcon color="#007acc" />],
     },
-    {
-      text: 'Flutter',
-      icon: [<SiFlutter color="#007acc" />],
-    },
+
     {
       text: 'Postman',
       icon: [<SiPostman color="#EF5B25" />],

@@ -5,7 +5,7 @@ import DockerIcon from 'mdi-react/DockerIcon';
 import AwsIcon from 'mdi-react/AwsIcon';
 import ReactIcon from 'mdi-react/ReactIcon';
 import FirebaseIcon from 'mdi-react/FirebaseIcon';
-import LoginIcon from 'mdi-react/LoginIcon';
+
 import LanguageTypescriptIcon from 'mdi-react/LanguageTypescriptIcon';
 import {
   SiMongodb,
@@ -37,7 +37,7 @@ export const portuguesData = {
     {
       company: 'Advanced Digital',
       atividade:
-        'Realizar manutenção de e-commerce websites e fix bugs, criar e-commerce do zero com React (hooks & redux), integrar front com api api e adicionar routes/controllers (node.js). MERN stack: confort with react && node',
+        'Realizar manutenção de e-commerce websites e fix bugs, criar e-commerce do zero com React (hooks & redux), integrar front com api api e adicionar routes/controllers (node.js). MERN stack: confort with react && node, criar applicativo de admin com Flutter',
     },
   ],
   projetos: [
@@ -57,19 +57,7 @@ export const portuguesData = {
         <AwsIcon color="black" />,
       ],
     },
-    {
-      titulo: 'Crown e-commerce',
-      img: images.eloja,
-      gitHub: 'https://github.com/Janku13/E_commerce.git',
-      link: 'http://janku-crwn-shop.herokuapp.com',
-      descricaoCurta:
-        'E-commerce webSite com redux, fireBase, scss, e Stripe payments. hospedado no heroku e netlify.',
-      descricao: ` `,
-      usedTech: [
-        <ReactIcon color="#61DBFB" />,
-        <FirebaseIcon color="#FFA000" />,
-      ],
-    },
+
     {
       titulo: 'Coffee',
       img: images.coffee,
@@ -96,6 +84,29 @@ export const portuguesData = {
       usedTech: [
         <TbBrandNextjs size={28} color="#2C384A" />,
         <ReactIcon color="#61DBFB" />,
+      ],
+    },
+    {
+      titulo: 'Flutter E-commerce',
+      img: images.flutterEcommerce,
+      gitHub: 'https://github.com/Janku13/flutter_ecommerce',
+
+      descricaoCurta:
+        'Flutter e-commerce com login,cart,detalhes do produto, infint loading e GetX para state-managment consumindo API externa',
+      descricao: ` `,
+      usedTech: [<SiFlutter color="#007acc" />, <SiDart color="black" />],
+    },
+    {
+      titulo: 'Crown e-commerce',
+      img: images.eloja,
+      gitHub: 'https://github.com/Janku13/E_commerce.git',
+      link: 'http://janku-crwn-shop.herokuapp.com',
+      descricaoCurta:
+        'E-commerce webSite com redux, fireBase, scss, e Stripe payments. hospedado no heroku e netlify.',
+      descricao: ` `,
+      usedTech: [
+        <ReactIcon color="#61DBFB" />,
+        <FirebaseIcon color="#FFA000" />,
       ],
     },
     {
@@ -216,6 +227,10 @@ export const portuguesData = {
       icon: [<NodejsIcon size={28} color="green" />],
     },
     {
+      text: 'Flutter',
+      icon: [<SiFlutter color="#007acc" />],
+    },
+    {
       text: 'Next.js',
       icon: [<TbBrandNextjs size={28} color="#2C384A" />],
     },
@@ -223,10 +238,7 @@ export const portuguesData = {
       text: 'Typescript',
       icon: [<LanguageTypescriptIcon color="#007acc" />],
     },
-    {
-      text: 'Flutter',
-      icon: [<SiFlutter color="#007acc" />],
-    },
+
     {
       text: 'Postman',
       icon: [<SiPostman color="#EF5B25" />],

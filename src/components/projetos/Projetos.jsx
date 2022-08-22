@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import NodejsIcon from 'mdi-react/NodejsIcon';
 import GithubIcon from 'mdi-react/GithubIcon';
 import WebIcon from 'mdi-react/WebIcon';
 import { Card, Row, Col, Container, CardText } from 'reactstrap';
